@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="login">
+        <form id="login-form">
+            <h1>Login Page</h1>
+            <input type="text" id="username" placeholder="login id" required>
+            <input type="password" id="password" placeholder="password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="customer-list">
+        <h1>Customer List</h1>
+        <div id="controls">
+            <button id="addCustomer" onclick="addCustomer()">Add Customer</button>
+            <label for="sortBy">Sort By</label>
+            <select id="sortBy">
+                <option value="name">Name</option>
+                <option value="city">City</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+            <label for="searchBy">Search By</label>
+            <select id="searchBy">
+                <option value="name">Name</option>
+                <option value="city">City</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+            <div>
+                <input id="searchBar" type="text" placeholder="Search">
+                <button class="btn" onclick="search()">Search</button>
+            </div>
+            <button onclick="sync()" class="btn">Sync</button>
+        </div>
+
+        <div class="pagination">
+            Page no:
+            <button id="page1">1</button>
+            <button id="page2">2</button>
+            <button id="page3">3</button>
+            <button id="page4">4</button>
+        </div>
+
+        <div id="table">
+            <table id="customer-table"></table>
+        </div>
+
+        <form id="addCustomer-form" class="customer-form">
+            <h1 id="form-heading">Add Customer</h1>
+            <div>
+                <div>
+                    <label for="FirstName">First Name:</label>
+                    <input id="FirstName" type="text" placeholder="First Name">
+                </div>
+                <div>
+                    <label for="LastName">Last Name:</label>
+                    <input id="LastName" type="text" placeholder="Last Name">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Address">Address:</label>
+                    <input id="Address" type="text" placeholder="Address">
+                </div>
+                <div>
+                    <label for="City">City:</label>
+                    <input id="City" type="text" placeholder="City">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="State">State:</label>
+                    <input id="State" type="text" placeholder="State">
+                </div>
+                <div>
+                    <label for="Email">Email:</label>
+                    <input id="Email" type="email" placeholder="Email">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Phone">Phone:</label>
+                    <input id="Phone" type="text" placeholder="Phone">
+                </div>
+            </div>
+            <button type="submit">Add</button>
+        </form>
+
+        <form id="editCustomer-form" class="customer-form">
+            <h1 id="form-heading">Edit Customer</h1>
+            <div>
+                <div>
+                    <label for="editFirstName">First Name:</label>
+                    <input id="editFirstName" type="text" placeholder="First Name">
+                </div>
+                <div>
+                    <label for="editLastName">Last Name:</label>
+                    <input id="editLastName" type="text" placeholder="Last Name">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="editAddress">Address:</label>
+                    <input id="editAddress" type="text" placeholder="Address">
+                </div>
+                <div>
+                    <label for="editCity">City:</label>
+                    <input id="editCity" type="text" placeholder="City">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="editState">State:</label>
+                    <input id="editState" type="text" placeholder="State">
+                </div>
+                <div>
+                    <label for="editEmail">Email:</label>
+                    <input id="editEmail" type="email" placeholder="Email">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="editPhone">Phone:</label>
+                    <input id="editPhone" type="text" placeholder="Phone">
+                </div>
+            </div>
+            <button type="submit">Update</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Add this CSS rule to make the submit button blue */
+button[type="submit"] {
+    background-color: blue;
+    color: rgb(230, 37, 37); /* Optional: Set text color to white for better contrast */
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+#customer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#controls > * {
+    margin-bottom: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+#addCustomer-form, #editCustomer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #020202;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Add margin top for separation */
+    margin-left: auto; /* Align to the right */
+    margin-right: auto; /* Align to the left */
+}
+
+#addCustomer-form > div,
+#editCustomer-form > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#addCustomer-form input,
+#editCustomer-form input,
+#addCustomer-form select,
+#editCustomer-form select {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#addCustomer-form button,
+#editCustomer-form button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 10px; /* Add margin top for separation */
+}
